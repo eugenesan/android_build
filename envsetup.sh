@@ -59,12 +59,12 @@ function check_product()
         return
     fi
 
-    if (echo -n $1 | grep -q -e "^omni_") ; then
-       CUSTOM_BUILD=$(echo -n $1 | sed -e 's/^omni_//g')
+    if (echo -n $1 | grep -q -e "^mahdi_") ; then
+       MAHDI_BUILD=$(echo -n $1 | sed -e 's/^mahdi_//g')
     else
-       CUSTOM_BUILD=
+       MAHDI_BUILD=
     fi
-    export CUSTOM_BUILD
+    export MAHDI_BUILD
 
     CALLED_FROM_SETUP=true BUILD_SYSTEM=build/core \
         TARGET_PRODUCT=$1 \
@@ -474,10 +474,10 @@ function brunch()
 function breakfast()
 {
     target=$1
-    CUSTOM_DEVICES_ONLY="true"
+    MAHDI_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
     add_lunch_combo full-eng
-    for f in `/bin/ls vendor/omni/vendorsetup.sh 2> /dev/null`
+    for f in `/bin/ls vendor/mahdi/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
             . $f

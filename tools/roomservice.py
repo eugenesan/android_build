@@ -34,16 +34,16 @@ except ImportError:
 
 # Config
 # set this to the default remote to use in repo
-default_rem = "github"
+default_rem = "Mahdi-Rom"
 # set this to the default revision to use (branch/tag name)
-default_rev = "android-4.4"
+default_rev = "kk-4.4"
 # set this to the remote that you use for projects from your team repos
-# example fetch="https://github.com/omnirom"
-default_team_rem = "omnirom"
+# example fetch="https://github.com/mahdi-rom"
+default_team_rem = "mahdi-rom"
 # this shouldn't change unless google makes changes
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
-android_team = "omnirom"
+android_team = "mahdi-rom"
 
 
 def check_repo_exists(git_data):
@@ -204,7 +204,7 @@ def parse_device_from_folder(device):
 
 
 def parse_dependency_file(location):
-    dep_file = "omni.dependencies"
+    dep_file = "mahdi.dependencies"
     dep_location = '/'.join([location, dep_file])
     if not os.path.isfile(dep_location):
         print("WARNING: %s file not found" % dep_location)
