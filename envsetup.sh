@@ -493,8 +493,8 @@ function breakfast()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
-            # This is probably just the omni model name
-            lunch omni_$target-userdebug
+            # This is probably just the mahdi model name
+            lunch mahdi_$target-userdebug
         fi
     fi
     return $?
@@ -750,6 +750,7 @@ function mm()
 
 function mmm()
 {
+    local MMM_MAKE=make
     T=$(gettop)
     if [ "$T" ]; then
         local MAKEFILE=
