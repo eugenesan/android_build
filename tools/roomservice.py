@@ -34,16 +34,16 @@ except ImportError:
 
 # Config
 # set this to the default remote to use in repo
-default_rem = "Mahdi-Rom"
+default_rem = "github"
 # set this to the default revision to use (branch/tag name)
 default_rev = "kk-4.4"
 # set this to the remote that you use for projects from your team repos
-# example fetch="https://github.com/mahdi-rom"
-default_team_rem = "mahdi-rom"
+# example fetch="https://github.com/Mahdi-Rom"
+default_team_rem = "Mahdi-Rom"
 # this shouldn't change unless google makes changes
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
-android_team = "mahdi-rom"
+android_team = "Mahdi-Rom"
 
 
 def check_repo_exists(git_data):
