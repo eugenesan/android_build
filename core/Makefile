@@ -1654,3 +1654,6 @@ endif
 ifneq ($(sdk_repo_goal),)
 include $(TOPDIR)development/build/tools/sdk_repo.mk
 endif
+
+# Injects addons as replacement for custom vendor
+include $(TOPDIR)build/addons.mk
